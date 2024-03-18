@@ -18,11 +18,18 @@
 }
 
 .submit-login {
-    width: calc(100% - 60px);
-    position: absolute;
-
+    width: 100%;
     box-sizing: border-box;
     bottom: 30px;
+}
+
+.remember-me-login {
+    background-color: grey;
+    margin-right: 5px;
+}
+
+.under-login-form {
+    width: 100%;
 }
 
 .login-page {
