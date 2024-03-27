@@ -11,7 +11,7 @@ export const url = (path: string, params?: {[key: string]: string})=>{
     if(PROD)
         return path+strParams;
 
-    return `${window.location.protocol}//${window.location.hostname}:80/api/v1`+path.start(1, "/")+strParams;
+    return `${window.location.protocol}//${window.location.hostname}:80/api`+path.start(1, "/")+strParams;
 };
 
 interface CustomRequestInit extends Omit<RequestInit, "body"> {
